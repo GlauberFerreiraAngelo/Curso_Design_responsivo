@@ -12,6 +12,7 @@
     --botaoEnviar_1: #999;
     --botaoEnviar_2: #fff;
     --botaoEfeito_hover: rgb(255, 255, 255, 0);
+    --footer_1: #e3e3e6;
 }
 
 html{
@@ -160,7 +161,7 @@ form{
 }
 
 footer{
-    background: #e3e3e6;
+    background: var(--footer_1);
     text-transform: uppercase;
 }
 
