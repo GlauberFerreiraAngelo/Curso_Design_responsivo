@@ -1,0 +1,206 @@
+:root{
+    --html_cor_1: #c7c3c6 0%; /*Grayish magenta*/
+    --html_cor_2: #e3e3e6 65%; /*Light grayish blue*/
+    --body_cor_1: #747474; /*Dark gray*/
+    --a_cor_1: #747474; /*Dark gray*/
+    --header_a_1: #999;
+    --header_a_2: white;
+    --section_1: #e3e3e6;
+    --icones_a_1: #fff;
+    --icones_a_hover: #999;
+    --campoFormulario: #999;
+    --botaoEnviar_1: #999;
+    --botaoEnviar_2: #fff;
+    --botaoEfeito_hover: rgb(255, 255, 255, 0);
+}
+
+html{
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--html_cor_1), var(--html_cor_2))
+    /*
+    background: radial-gradient(var(--html_red), var(--html_orange));
+    background: linear-gradient(to bottom, var(--html_red), var(--html_orange));*/
+}
+
+body{
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-attachment: fixed;
+    color: var(--body_cor_1);
+    padding-top: 500px;
+}
+
+a{
+    color: var(--a_cor_1);
+    text-decoration: none;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+header a{
+    border: 1px solid var(--header_a_2);
+    text-transform: uppercase;
+    padding: 12px;
+    margin: 0 5px;
+    letter-spacing: 0.1em;
+    color: var(--header_a_1);
+    display: inline-block;
+    background: var(--header_a_2);
+}
+
+.conteudo{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+iframe{
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+}
+
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+section{
+    padding: 30px 0;
+    background: var(--section_1);
+}
+
+section h2{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+
+.seguir{
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.icones{
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+
+.icones li{
+    display: inline-block;
+    padding: 0 9px;
+}
+
+.icones a{
+    color: var(--icones_a_1);
+    font-size: 20px;
+}
+
+.icones a:hover{
+    color: var(--icones_a_hover);
+    transition: color 300ms ease-out;
+}
+
+.coluna{
+    margin: 5px;
+    width: 100%;
+}
+
+form{
+    position: relative;
+}
+
+.campoFormulario{
+    float: left;
+    width: 65%;
+    padding: 8px 0;
+    background: none;
+    border: 0;
+    line-height: 1em;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-indent: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--campoFormulario);
+}
+
+.botaoEnviar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px;
+    font-size: 11px;
+    text-transform: uppercase;
+    background: var(--botaoEnviar_2);
+    color: var(--botaoEnviar_1);
+    border: 1px solid var(--botaoEnviar_2);
+    cursor: pointer;
+}
+
+.botaoEfeito{
+    outline: 1px solid #fff;
+    transition: 1250ms;
+}
+
+.botaoEfeito:hover{
+    outline-offset: 15px;
+    border: 1px solid;
+    cursor: pointer;
+    outline-color: var(--botaoEfeito_hover);
+}
+
+footer{
+    background: #e3e3e6;
+    text-transform: uppercase;
+}
+
+footer p{
+    font-size: 9px;
+    letter-spacing: 0.5em;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.logoRca{
+    background-image: url(../img/rca.png);
+    width: 55px;
+    height: 16px;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.logoRca:hover{
+    background-image: url(../img/rca-hover.png);
+    transition: background-image 1000ms;
+}
+
+@media(max-width: 991px){
+    body{
+        background-image: url(../img/fundo-mobile.png);
+        background-attachment: scroll;
+        padding-top: 450px;
+    }
+}
+
+@media(max-width:768px){
+    header a{
+        display: block;
+        max-width: 200px;
+        margin: 10px auto;
+    }
+    .linha{
+        flex-direction: column;
+    }
+}
